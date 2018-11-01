@@ -1,0 +1,30 @@
+.header {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .5), transparent 50%);
+  height: 15rem;
+  padding: 4rem 0 0;
+  width: 100%;
+}
+
+.welcome {
+  color: #f2f2f2;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 7px;
+  line-height: 0;
+  margin: 0 0 0 4rem;
+  padding: 0;
+}
+
+.header-main {
+  color: #f2f2f2;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 8rem;
+  line-height: 6rem;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 1;
+}

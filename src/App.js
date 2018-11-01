@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CardContainer from './CardContainer/CardContainer';
+import Header from './Header/Header';
+import backgroundImg from './images/track.jpg';
+
+import { Parallax, Background } from 'react-parallax';
+
 
 class App extends Component {
+
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className='App'>
+        <Parallax
+          strength={700}
+          className='parallax-header'>
+          <Background className='parallax-image'>
+            <img 
+              src={backgroundImg} 
+              alt='background' />
+          </Background>
+
+          <Header />          
+          <CardContainer />
+
+        </Parallax>
       </div>
     );
   }
