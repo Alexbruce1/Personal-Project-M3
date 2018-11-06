@@ -1,7 +1,3 @@
-body {
-  background-color: #666;
-}
-
 .App {
   text-align: center;
 }
@@ -37,20 +33,33 @@ body {
 
 .parallax-header {
   left: 0;
+  min-height: 100vh;
   margin: 0;
+  position: absolute;
   top: 0;
   width: 100vw;
 }
 
 .parallax-image {
+  background-image: url('./images/track.jpg');
+  background-size: cover;
+  top: 37vh;
   height: 100vh;
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
-  margin: 0;
-  padding: 0;
+  position: relative;
+  left: 0;
+  /* margin: 0;
+  padding: 0; */
   width: 100vw;
-  z-index: -1;
+  z-index: 1;
+}
+
+.parallax-transition {
+  background: linear-gradient(to bottom, transparent, #fcfcfc, #fcfcfc 70%);
+  /* background-color: #fcfcfc; */
+  position: absolute;
+  top: 30vh;
+  width: 100vw;
+  height: 150vh;
 }
 
 .parallax-image img {
