@@ -2,7 +2,6 @@ import * as API from '../API/API';
 
 export const searchData = async (query, type) => {
   const getData = await API.fetchData(query, type);
-  // debugger;
   const cleanedData = await returnMedia(getData.Similar);
   return cleanedData;
 }
