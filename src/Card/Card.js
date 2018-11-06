@@ -3,7 +3,7 @@ import './Card.css';
 
 class Card extends Component {
   render() {
-    const { name, type, teaser, wiki, yt, yId } = this.props;
+    const { name, type, teaser, wiki, yt } = this.props;
     return (
       <div className="card">
         <div className="card-top-container">

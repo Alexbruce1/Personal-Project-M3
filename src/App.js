@@ -4,7 +4,7 @@ import './App.css';
 import CardContainer from './CardContainer/CardContainer';
 import Header from './Header/Header';
 import Search from './Search/Search';
-import { Route, NavLink } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { searchData } from './utilities/Cleaner';
 import { Parallax, Background } from 'react-parallax';
@@ -36,11 +36,7 @@ export class App extends Component {
   callApi = async() => {
     const { query, mediaType } = this.state;
     const returnedData = await searchData(query, mediaType);
-    await console.log(returnedData);
-    console.log('PROPS: ', this.props)
-    // debugger;
     this.props.setData(returnedData);
-    // console.log(this.props.)
   }
 
   render() {
@@ -89,9 +85,5 @@ export const mapDispatchToProps = (dispatch) => ({
   setData: (media) => dispatch(setData(media))
 });
 
-// dispatch => ({ actions: bindActionCreators({ setData }, dispatch) })
-
 
 export default connect( mapStateToProps, mapDispatchToProps )(App);
-
-// state => ({ state }),
