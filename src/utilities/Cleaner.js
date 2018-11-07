@@ -17,6 +17,6 @@ export const returnMedia = async (data) => {
       yt: item.yUrl,
       yId: item.yId,
     }
-  })
-  return Promise.all(mediaPromises)
+  });
+  return Promise.all(mediaPromises);
 }

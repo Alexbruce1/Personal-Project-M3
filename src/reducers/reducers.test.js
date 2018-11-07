@@ -10,9 +10,9 @@ describe('reducer', () => {
   });
 
   it('Should set data as new state', () => {
-    const mockData = [{ }, { }];
+    const mockData = [];
     const mockAction = {
-      type: 'GET_DATA',
+      type: 'SET_DATA',
       media: mockData
     }
     const newState = mediaReducer([], mockAction);

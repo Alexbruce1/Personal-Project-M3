@@ -3,9 +3,9 @@ export const setData = (media) => ({
   media
 });
 
-export const addQuery = (query) => ({
-  type: 'ADD_QUERY',
-  query
+export const removeStateMedia = (media) => ({
+  type: 'REMOVE_STATE_MEDIA',
+  media
 });
 
 export const addDataType = (dataType) => ({
