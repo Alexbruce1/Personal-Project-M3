@@ -58,7 +58,12 @@ export class App extends Component {
                 <div className='parallax-transition'></div>
               </Background>
               <Header />
-            <NavLink className='navlink-search' to='/search' >Search for Content</NavLink>
+              <div className='instructions'>
+                <p>
+                  <strong>Apex</strong> gives you recommendations for movies, TV shows, music, books, authors, and games as results to your searches. With a motorsport theme, it's perfect for finding new forms of media to be passionate about. Give it a try. Search for things like <strong>'Senna'</strong>, <strong>'Talladega Knights'</strong>, <strong>'Gran Turismo'</strong>, or any other motorsport related things you may like!
+                </p>
+              </div>
+              <NavLink className='navlink-search' to='/search' >Search for Content</NavLink>
           </Parallax>
           )
         }} />

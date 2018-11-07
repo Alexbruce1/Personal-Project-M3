@@ -2,18 +2,42 @@
   text-align: center;
 }
 
-.navlink-search {
+.instructions {
   background-color: rgba(242, 242, 242, .8); 
   border: none;
+  border-radius: 1rem;
   box-shadow: 0 1px 7px rgba(0, 0, 0, .3);
   color: #444;
   cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  height: 12rem;
+  letter-spacing: 1px;
+  margin: 0 auto 3rem;
+  outline: none;
+  padding: 2rem 3rem;
+  text-indent: 4rem;
+  text-align: justify;
+  text-decoration: none;
+  transition-duration: .3s;
+  width: 40rem;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.navlink-search {
+  background-color: rgba(242, 242, 242, .8); 
+  border: none;
   border-radius: 1rem;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, .3);
+  color: #444;
+  cursor: pointer;
   font-family: 'Lato', sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 1px;
-  padding: 12px 0;
   margin: 1.25rem 0;
   outline: none;
   padding: 2rem 10rem;
