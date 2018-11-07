@@ -45,9 +45,14 @@
   position: absolute;
   text-indent: 1rem;
   text-decoration: none;
-  top: 12rem;
+  top: 15rem;
   transition-duration: .3s;
   width: 20rem;
+}
+
+.remove-media img {
+  height: 1rem;
+  margin-right: 1rem;
 }
 
 .remove-media:hover {

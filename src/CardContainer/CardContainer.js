@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card';
+import dinosaur from '../images/dinosaur.png';
 import './CardContainer.css';
 
 
@@ -18,8 +19,13 @@ const CardContainer = (props) => {
   return(
     <div className='outer-container'>
       <div className='card-container'>
-        {
-          postData
+        { props.media.length > 1 ?
+          postData :
+          <div className='no-responses'>
+            <h2>Sorry, there were no matches to your search</h2>
+            <img alt='' src={dinosaur} />
+            <h2>Try another search</h2>
+          </div>
         }
       </div>
     </div>

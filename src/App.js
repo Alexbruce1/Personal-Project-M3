@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './App.css';
+import backArrow from './images/back.svg'
 import CardContainer from './CardContainer/CardContainer';
 import Header from './Header/Header';
 import Search from './Search/Search';
@@ -15,7 +15,7 @@ export class App extends Component {
   constructor(props) {
     super();
     this.state = {
-      data: [],
+      // data: [],
       query: '',
       mediaType: '',
     }
@@ -41,7 +41,6 @@ export class App extends Component {
 
   removeMedia = () => {
     let newMedia = []
-    // debugger;
     this.props.removeStateMedia(newMedia)
   }
 
@@ -92,7 +91,10 @@ export class App extends Component {
           <Route path='/search' render={() => {
             return (
               <div>
-                <button className='remove-media' onClick={() => { this.removeMedia() }}>Make Another Search</button>
+                <button className='remove-media' onClick={() => { this.removeMedia() }}>
+                  <img alt='' src={backArrow} />
+                  Make Another Search
+                </button>
                 <CardContainer media={media} />
               </div>
             )
@@ -101,10 +103,6 @@ export class App extends Component {
       </div>
     );
   }
-}
-
-App.propTypes = {
-  newFunction: PropTypes.func.isRequired
 }
 
 export const mapStateToProps = ({ media }) => ({

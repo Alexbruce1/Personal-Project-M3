@@ -3,8 +3,7 @@ export const mediaReducer = (state = [], action) => {
     case 'SET_DATA':
       return action.media;
     case 'REMOVE_STATE_MEDIA':
-      // return action.media;
-      return [];
+      return action.media;
     case 'ADD_DATA_TYPE':
       return action.dataType;
     default:
