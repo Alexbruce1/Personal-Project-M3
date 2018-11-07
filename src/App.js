@@ -15,7 +15,6 @@ export class App extends Component {
   constructor(props) {
     super();
     this.state = {
-      // data: [],
       query: '',
       mediaType: '',
     }

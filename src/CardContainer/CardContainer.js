@@ -7,6 +7,7 @@ import './CardContainer.css';
 const CardContainer = (props) => {
   const postData = props.media.map(item => {
     return <Card
+      key={item.name}
       name={item.name}
       type={item.type}
       teaser={item.teaser}
