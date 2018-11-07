@@ -6,10 +6,18 @@ import { shallow } from 'enzyme';
 describe('App', () => {
   let wrapper;
   let data;
+  let setData;
+  let removeStateMedia;
 
   beforeEach(() => {
+    setData = jest.fn();
+    removeStateMedia = jest.fn();
     data = []
-    wrapper = shallow(<App media={data} />);
+    wrapper = shallow(<App 
+      setData={setData}
+      removeStateMedia={removeStateMedia}
+      media={data} 
+      />);
   });
 
   it('Should render like snapshot', () => {
@@ -39,11 +47,49 @@ describe('App', () => {
 
     expect(dispatch.mock.calls[0][0]).toEqual({ type: 'REMOVE_STATE_MEDIA' });
   });
+
+  it('should call setData when callApi is invoked', async() => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      json: () => Promise.resolve({Similar:{Info: [{}], Results: []}})
+    }));
   
-  // it('renders without crashing', () => {
-  //   // const div = document.createElement('div');
-  //   // ReactDOM.render(<App />, div);
-  //   // ReactDOM.unmountComponentAtNode(div);
-  // });
-  
-})
+    await wrapper.instance().callApi();
+
+    await expect(setData).toHaveBeenCalled();
+  });
+
+  it('should call removeStateMedia  when removeMedia is invoked', () => {
+    wrapper.instance().removeMedia();
+
+    expect(removeStateMedia).toHaveBeenCalled();
+  });
+
+  it('should update state when storeQuery is called', () => {
+    let e = {target: {value: 'yes'}};
+
+    wrapper.instance().storeQuery(e);
+
+    expect(wrapper.state().query).toEqual('yes');
+  });
+
+  it('should update state when setType is called', () => {
+    let e = { target: { value: 'yes' } };
+
+    wrapper.instance().setType(e);
+
+    expect(wrapper.state().mediaType).toEqual('yes');
+  });
+
+  it.skip('should change routes after clicking NavLink', () => {
+    wrapper.find('.navlink-search').simulate('click');
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it.skip('should call removeStateMedia  when removeMedia is invoked', () => {
+    wrapper.find('.remove-media').simulate('click');
+
+    expect(removeStateMedia).toHaveBeenCalled();
+  });
+
+});

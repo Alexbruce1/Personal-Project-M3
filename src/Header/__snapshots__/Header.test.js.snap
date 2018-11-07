@@ -1,13 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App Should render like snapshot 1`] = `
+exports[`Header should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
-    media={Array []}
-    removeStateMedia={[MockFunction]}
-    setData={[MockFunction]}
-  />,
+  Symbol(enzyme.__unrendered__): <Header />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -22,49 +18,45 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Route
-          exact={true}
-          path="/"
-          render={[Function]}
-        />,
-        <Route
-          exact={true}
-          path="/search"
-          render={[Function]}
-        />,
-        0,
+        <p
+          className="welcome"
+        >
+          Welcome to
+        </p>,
+        <h1
+          className="header-main"
+        >
+          Apex
+        </h1>,
       ],
-      "className": "App",
+      "className": "header",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "exact": true,
-          "path": "/",
-          "render": [Function],
+          "children": "Welcome to",
+          "className": "welcome",
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": "Welcome to",
+        "type": "p",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "exact": true,
-          "path": "/search",
-          "render": [Function],
+          "children": "Apex",
+          "className": "header-main",
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": "Apex",
+        "type": "h1",
       },
-      0,
     ],
     "type": "div",
   },
@@ -75,49 +67,45 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Route
-            exact={true}
-            path="/"
-            render={[Function]}
-          />,
-          <Route
-            exact={true}
-            path="/search"
-            render={[Function]}
-          />,
-          0,
+          <p
+            className="welcome"
+          >
+            Welcome to
+          </p>,
+          <h1
+            className="header-main"
+          >
+            Apex
+          </h1>,
         ],
-        "className": "App",
+        "className": "header",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "exact": true,
-            "path": "/",
-            "render": [Function],
+            "children": "Welcome to",
+            "className": "welcome",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": "Welcome to",
+          "type": "p",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "exact": true,
-            "path": "/search",
-            "render": [Function],
+            "children": "Apex",
+            "className": "header-main",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": "Apex",
+          "type": "h1",
         },
-        0,
       ],
       "type": "div",
     },

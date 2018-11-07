@@ -1,0 +1,336 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render like the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    name="name"
+    teaser="teaser"
+    type="type"
+    wiki="wiki"
+    yId="yId"
+    yt="yt"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="card-top-container"
+        >
+          <p
+            className="title"
+          >
+            name
+          </p>
+          <p
+            className="media-type"
+          >
+            type
+          </p>
+        </div>,
+        <a
+          className="wikipedia-link"
+          href="wiki"
+        >
+          Learn More
+        </a>,
+        <p
+          className="description"
+        >
+          teaser
+        </p>,
+        <iframe
+          className="youtube-embed"
+          src="yt"
+          title="YouTube Link"
+        />,
+        <div
+          className="youtube-background"
+        >
+          Loading YouTube link ...
+        </div>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p
+              className="title"
+            >
+              name
+            </p>,
+            <p
+              className="media-type"
+            >
+              type
+            </p>,
+          ],
+          "className": "card-top-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "name",
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": "name",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "type",
+              "className": "media-type",
+            },
+            "ref": null,
+            "rendered": "type",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Learn More",
+          "className": "wikipedia-link",
+          "href": "wiki",
+        },
+        "ref": null,
+        "rendered": "Learn More",
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "teaser",
+          "className": "description",
+        },
+        "ref": null,
+        "rendered": "teaser",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "youtube-embed",
+          "src": "yt",
+          "title": "YouTube Link",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "iframe",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Loading YouTube link ...",
+          "className": "youtube-background",
+        },
+        "ref": null,
+        "rendered": "Loading YouTube link ...",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="card-top-container"
+          >
+            <p
+              className="title"
+            >
+              name
+            </p>
+            <p
+              className="media-type"
+            >
+              type
+            </p>
+          </div>,
+          <a
+            className="wikipedia-link"
+            href="wiki"
+          >
+            Learn More
+          </a>,
+          <p
+            className="description"
+          >
+            teaser
+          </p>,
+          <iframe
+            className="youtube-embed"
+            src="yt"
+            title="YouTube Link"
+          />,
+          <div
+            className="youtube-background"
+          >
+            Loading YouTube link ...
+          </div>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="title"
+              >
+                name
+              </p>,
+              <p
+                className="media-type"
+              >
+                type
+              </p>,
+            ],
+            "className": "card-top-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "name",
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": "name",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "type",
+                "className": "media-type",
+              },
+              "ref": null,
+              "rendered": "type",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Learn More",
+            "className": "wikipedia-link",
+            "href": "wiki",
+          },
+          "ref": null,
+          "rendered": "Learn More",
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "teaser",
+            "className": "description",
+          },
+          "ref": null,
+          "rendered": "teaser",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "youtube-embed",
+            "src": "yt",
+            "title": "YouTube Link",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "iframe",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Loading YouTube link ...",
+            "className": "youtube-background",
+          },
+          "ref": null,
+          "rendered": "Loading YouTube link ...",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -5,9 +5,9 @@ import './CardContainer.css';
 
 
 const CardContainer = (props) => {
-  const postData = props.media.map(item => {
+  const postData = props.media.map((item, i) => {
     return <Card
-      key={item.name}
+      key={i}
       name={item.name}
       type={item.type}
       teaser={item.teaser}

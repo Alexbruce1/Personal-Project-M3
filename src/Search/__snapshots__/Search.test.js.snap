@@ -1,0 +1,905 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should render like the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Search
+    callApi={[MockFunction]}
+    setType={[MockFunction]}
+    storeQuery={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2
+          className="search-title"
+        >
+          Search for content below
+        </h2>,
+        <form
+          className="search-form"
+          onSubmit={[Function]}
+        >
+          <div
+            className="search-input-container"
+          >
+            <input
+              className="search-input"
+              onChange={[MockFunction]}
+              placeholder="Search"
+            />
+            <div
+              className="input-divider"
+            />
+            <select
+              className="type-select"
+              onChange={[MockFunction]}
+            >
+              <option
+                className="select-option"
+                value="Everything"
+              >
+                Everything
+              </option>
+              <option
+                className="select-option"
+                value="Movies"
+              >
+                Movies
+              </option>
+              <option
+                className="select-option"
+                value="TV"
+              >
+                TV
+              </option>
+              <option
+                className="select-option"
+                value="Books"
+              >
+                Books
+              </option>
+              <option
+                className="select-option"
+                value="Authors"
+              >
+                Authors
+              </option>
+              <option
+                className="select-option"
+                value="Games"
+              >
+                Games
+              </option>
+              <option
+                className="select-option"
+                value="Music"
+              >
+                Music
+              </option>
+            </select>
+          </div>
+          <input
+            className="search-submit"
+            type="submit"
+            value="Search"
+          />
+        </form>,
+      ],
+      "className": "search",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Search for content below",
+          "className": "search-title",
+        },
+        "ref": null,
+        "rendered": "Search for content below",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="search-input-container"
+            >
+              <input
+                className="search-input"
+                onChange={[MockFunction]}
+                placeholder="Search"
+              />
+              <div
+                className="input-divider"
+              />
+              <select
+                className="type-select"
+                onChange={[MockFunction]}
+              >
+                <option
+                  className="select-option"
+                  value="Everything"
+                >
+                  Everything
+                </option>
+                <option
+                  className="select-option"
+                  value="Movies"
+                >
+                  Movies
+                </option>
+                <option
+                  className="select-option"
+                  value="TV"
+                >
+                  TV
+                </option>
+                <option
+                  className="select-option"
+                  value="Books"
+                >
+                  Books
+                </option>
+                <option
+                  className="select-option"
+                  value="Authors"
+                >
+                  Authors
+                </option>
+                <option
+                  className="select-option"
+                  value="Games"
+                >
+                  Games
+                </option>
+                <option
+                  className="select-option"
+                  value="Music"
+                >
+                  Music
+                </option>
+              </select>
+            </div>,
+            <input
+              className="search-submit"
+              type="submit"
+              value="Search"
+            />,
+          ],
+          "className": "search-form",
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="search-input"
+                  onChange={[MockFunction]}
+                  placeholder="Search"
+                />,
+                <div
+                  className="input-divider"
+                />,
+                <select
+                  className="type-select"
+                  onChange={[MockFunction]}
+                >
+                  <option
+                    className="select-option"
+                    value="Everything"
+                  >
+                    Everything
+                  </option>
+                  <option
+                    className="select-option"
+                    value="Movies"
+                  >
+                    Movies
+                  </option>
+                  <option
+                    className="select-option"
+                    value="TV"
+                  >
+                    TV
+                  </option>
+                  <option
+                    className="select-option"
+                    value="Books"
+                  >
+                    Books
+                  </option>
+                  <option
+                    className="select-option"
+                    value="Authors"
+                  >
+                    Authors
+                  </option>
+                  <option
+                    className="select-option"
+                    value="Games"
+                  >
+                    Games
+                  </option>
+                  <option
+                    className="select-option"
+                    value="Music"
+                  >
+                    Music
+                  </option>
+                </select>,
+              ],
+              "className": "search-input-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "search-input",
+                  "onChange": [MockFunction],
+                  "placeholder": "Search",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "input-divider",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <option
+                      className="select-option"
+                      value="Everything"
+                    >
+                      Everything
+                    </option>,
+                    <option
+                      className="select-option"
+                      value="Movies"
+                    >
+                      Movies
+                    </option>,
+                    <option
+                      className="select-option"
+                      value="TV"
+                    >
+                      TV
+                    </option>,
+                    <option
+                      className="select-option"
+                      value="Books"
+                    >
+                      Books
+                    </option>,
+                    <option
+                      className="select-option"
+                      value="Authors"
+                    >
+                      Authors
+                    </option>,
+                    <option
+                      className="select-option"
+                      value="Games"
+                    >
+                      Games
+                    </option>,
+                    <option
+                      className="select-option"
+                      value="Music"
+                    >
+                      Music
+                    </option>,
+                  ],
+                  "className": "type-select",
+                  "onChange": [MockFunction],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Everything",
+                      "className": "select-option",
+                      "value": "Everything",
+                    },
+                    "ref": null,
+                    "rendered": "Everything",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Movies",
+                      "className": "select-option",
+                      "value": "Movies",
+                    },
+                    "ref": null,
+                    "rendered": "Movies",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "TV",
+                      "className": "select-option",
+                      "value": "TV",
+                    },
+                    "ref": null,
+                    "rendered": "TV",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Books",
+                      "className": "select-option",
+                      "value": "Books",
+                    },
+                    "ref": null,
+                    "rendered": "Books",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Authors",
+                      "className": "select-option",
+                      "value": "Authors",
+                    },
+                    "ref": null,
+                    "rendered": "Authors",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Games",
+                      "className": "select-option",
+                      "value": "Games",
+                    },
+                    "ref": null,
+                    "rendered": "Games",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Music",
+                      "className": "select-option",
+                      "value": "Music",
+                    },
+                    "ref": null,
+                    "rendered": "Music",
+                    "type": "option",
+                  },
+                ],
+                "type": "select",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "search-submit",
+              "type": "submit",
+              "value": "Search",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            className="search-title"
+          >
+            Search for content below
+          </h2>,
+          <form
+            className="search-form"
+            onSubmit={[Function]}
+          >
+            <div
+              className="search-input-container"
+            >
+              <input
+                className="search-input"
+                onChange={[MockFunction]}
+                placeholder="Search"
+              />
+              <div
+                className="input-divider"
+              />
+              <select
+                className="type-select"
+                onChange={[MockFunction]}
+              >
+                <option
+                  className="select-option"
+                  value="Everything"
+                >
+                  Everything
+                </option>
+                <option
+                  className="select-option"
+                  value="Movies"
+                >
+                  Movies
+                </option>
+                <option
+                  className="select-option"
+                  value="TV"
+                >
+                  TV
+                </option>
+                <option
+                  className="select-option"
+                  value="Books"
+                >
+                  Books
+                </option>
+                <option
+                  className="select-option"
+                  value="Authors"
+                >
+                  Authors
+                </option>
+                <option
+                  className="select-option"
+                  value="Games"
+                >
+                  Games
+                </option>
+                <option
+                  className="select-option"
+                  value="Music"
+                >
+                  Music
+                </option>
+              </select>
+            </div>
+            <input
+              className="search-submit"
+              type="submit"
+              value="Search"
+            />
+          </form>,
+        ],
+        "className": "search",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Search for content below",
+            "className": "search-title",
+          },
+          "ref": null,
+          "rendered": "Search for content below",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="search-input-container"
+              >
+                <input
+                  className="search-input"
+                  onChange={[MockFunction]}
+                  placeholder="Search"
+                />
+                <div
+                  className="input-divider"
+                />
+                <select
+                  className="type-select"
+                  onChange={[MockFunction]}
+                >
+                  <option
+                    className="select-option"
+                    value="Everything"
+                  >
+                    Everything
+                  </option>
+                  <option
+                    className="select-option"
+                    value="Movies"
+                  >
+                    Movies
+                  </option>
+                  <option
+                    className="select-option"
+                    value="TV"
+                  >
+                    TV
+                  </option>
+                  <option
+                    className="select-option"
+                    value="Books"
+                  >
+                    Books
+                  </option>
+                  <option
+                    className="select-option"
+                    value="Authors"
+                  >
+                    Authors
+                  </option>
+                  <option
+                    className="select-option"
+                    value="Games"
+                  >
+                    Games
+                  </option>
+                  <option
+                    className="select-option"
+                    value="Music"
+                  >
+                    Music
+                  </option>
+                </select>
+              </div>,
+              <input
+                className="search-submit"
+                type="submit"
+                value="Search"
+              />,
+            ],
+            "className": "search-form",
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="search-input"
+                    onChange={[MockFunction]}
+                    placeholder="Search"
+                  />,
+                  <div
+                    className="input-divider"
+                  />,
+                  <select
+                    className="type-select"
+                    onChange={[MockFunction]}
+                  >
+                    <option
+                      className="select-option"
+                      value="Everything"
+                    >
+                      Everything
+                    </option>
+                    <option
+                      className="select-option"
+                      value="Movies"
+                    >
+                      Movies
+                    </option>
+                    <option
+                      className="select-option"
+                      value="TV"
+                    >
+                      TV
+                    </option>
+                    <option
+                      className="select-option"
+                      value="Books"
+                    >
+                      Books
+                    </option>
+                    <option
+                      className="select-option"
+                      value="Authors"
+                    >
+                      Authors
+                    </option>
+                    <option
+                      className="select-option"
+                      value="Games"
+                    >
+                      Games
+                    </option>
+                    <option
+                      className="select-option"
+                      value="Music"
+                    >
+                      Music
+                    </option>
+                  </select>,
+                ],
+                "className": "search-input-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "search-input",
+                    "onChange": [MockFunction],
+                    "placeholder": "Search",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "input-divider",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option
+                        className="select-option"
+                        value="Everything"
+                      >
+                        Everything
+                      </option>,
+                      <option
+                        className="select-option"
+                        value="Movies"
+                      >
+                        Movies
+                      </option>,
+                      <option
+                        className="select-option"
+                        value="TV"
+                      >
+                        TV
+                      </option>,
+                      <option
+                        className="select-option"
+                        value="Books"
+                      >
+                        Books
+                      </option>,
+                      <option
+                        className="select-option"
+                        value="Authors"
+                      >
+                        Authors
+                      </option>,
+                      <option
+                        className="select-option"
+                        value="Games"
+                      >
+                        Games
+                      </option>,
+                      <option
+                        className="select-option"
+                        value="Music"
+                      >
+                        Music
+                      </option>,
+                    ],
+                    "className": "type-select",
+                    "onChange": [MockFunction],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Everything",
+                        "className": "select-option",
+                        "value": "Everything",
+                      },
+                      "ref": null,
+                      "rendered": "Everything",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Movies",
+                        "className": "select-option",
+                        "value": "Movies",
+                      },
+                      "ref": null,
+                      "rendered": "Movies",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "TV",
+                        "className": "select-option",
+                        "value": "TV",
+                      },
+                      "ref": null,
+                      "rendered": "TV",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Books",
+                        "className": "select-option",
+                        "value": "Books",
+                      },
+                      "ref": null,
+                      "rendered": "Books",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Authors",
+                        "className": "select-option",
+                        "value": "Authors",
+                      },
+                      "ref": null,
+                      "rendered": "Authors",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Games",
+                        "className": "select-option",
+                        "value": "Games",
+                      },
+                      "ref": null,
+                      "rendered": "Games",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Music",
+                        "className": "select-option",
+                        "value": "Music",
+                      },
+                      "ref": null,
+                      "rendered": "Music",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "search-submit",
+                "type": "submit",
+                "value": "Search",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

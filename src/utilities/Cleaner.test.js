@@ -3,8 +3,8 @@ import * as API from '../API/API';
 jest.mock('../API/API');
 
 describe('Cleaner', () => {
-  let url = 'https://tastedive.com/api/';
-  let apiKey = '322746-Apex-5CWVBUFX';
+  // let url = 'https://tastedive.com/api/';
+  // let apiKey = '322746-Apex-5CWVBUFX';
 
   it('should call searchData with the correct arguments', () => {
     Cleaner.searchData('senna', 'movies');

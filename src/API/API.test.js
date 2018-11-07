@@ -4,7 +4,7 @@ describe('API', () => {
   let url;
 
   beforeEach(() => {
-    url = 'https://tastedive.com/api/similar?k=322746-Apex-5CWVBUFX&info=1&type=music&q=Fall Out Boy';
+    url = 'https://tastedive.com/api/similar?k=322746-Apex-5CWVBUFX&info=1&type=music&limit=25&q=Fall Out Boy';
 
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
       json: () => Promise.resolve({ data: 'response data' })

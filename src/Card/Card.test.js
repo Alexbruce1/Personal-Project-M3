@@ -1,8 +1,8 @@
-import { Card } from './Card';
+import Card from './Card';
 import React from 'react';
 import { shallow } from 'enzyme';
 
-describe.skip('Card', () => {
+describe('Card', () => {
   let wrapper = shallow(<Card
     name='name'
     type='type'
