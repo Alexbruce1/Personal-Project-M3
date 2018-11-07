@@ -17,7 +17,7 @@ class Card extends Component {
           title='YouTube Link' 
           src={yt}>
         </iframe>
-        <div className='youtube-background'>Loading YouTube link</div>
+        <div className='youtube-background'>Loading YouTube link ...</div>
       </div>
     )
   }

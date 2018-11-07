@@ -1,5 +1,8 @@
 .outer-container {
-  /* background: linear-gradient(to bottom, transparent, #fcfcfc 500px, #fcfcfc); */
+  background: linear-gradient(to bottom, transparent, #fcfcfc 1000px, #fcfcfc);
+  /* background-color: transparent; */
+  position: absolute;
+  top: 15rem;
   margin: 5rem 0 0 0;
   width: 100%;
 }
@@ -12,7 +15,7 @@
 }
 
 .recommendations-slider {
-  background-color: rgba(242, 242, 242, .95);
+  /* background-color: rgba(242, 242, 242, .95); */
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, .4);
   height: 10rem;
@@ -29,4 +32,25 @@
   padding: 5px 1rem;
   width: calc(100% - 2rem);
   /* overflow: scroll; */
+}
+
+.no-responses {
+  background-color: rgba(242, 242, 242, .9);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .4);
+  color: #444;
+  height: 35rem; 
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition-duration: .2s;
+  width: 300%;
+}
+
+.no-responses h2 {
+  color: #D42F27;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: 3rem;
 }

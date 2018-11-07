@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './App.css';
+import backArrow from './images/back.svg'
 import CardContainer from './CardContainer/CardContainer';
 import Header from './Header/Header';
 import Search from './Search/Search';
-import { Route } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { searchData } from './utilities/Cleaner';
 import { Parallax, Background } from 'react-parallax';
-import { setData } from './actions/actions';
+import { setData, removeStateMedia } from './actions/actions';
 
 
 export class App extends Component {
   constructor(props) {
     super();
     this.state = {
-      data: [],
+      // data: [],
       query: '',
       mediaType: '',
     }
@@ -39,12 +39,17 @@ export class App extends Component {
     this.props.setData(returnedData);
   }
 
+  removeMedia = () => {
+    let newMedia = []
+    this.props.removeStateMedia(newMedia)
+  }
+
   render() {
     const { media } = this.props;
     return (
-      <Route path="/" render={() => {
-        return(
-          <div className='App'>
+      <div className='App'>
+        <Route exact path='/' render={() => {
+          return(
             <Parallax
               strength={700}
               className='parallax-header'
@@ -52,29 +57,52 @@ export class App extends Component {
               <Background className='parallax-image'>
                 <div className='parallax-transition'></div>
               </Background>
-
               <Header />
+            <NavLink className='navlink-search' to='/search' >Search for Content</NavLink>
+          </Parallax>
+          )
+        }} />
+        <Route exact path='/search' render={() => {
+          return (
+            <div className='App'>
+              <Parallax
+                strength={700}
+                className='parallax-header'
+              >
+                <Background className='parallax-image'>
+                  <div className='parallax-transition'></div>
+                </Background>
 
-              <Search 
-                callApi={this.callApi}
-                storeQuery={this.storeQuery}
-                setType={this.setType}
-              />
-
-              { media &&
+                <Header />
+                {
+                  !media.length &&
+                  <Search
+                    callApi={this.callApi}
+                    storeQuery={this.storeQuery}
+                    setType={this.setType}
+                  />
+                }
+              </Parallax>
+            </div>
+          )
+        }} />
+        {
+          media.length &&
+          <Route path='/search' render={() => {
+            return (
+              <div>
+                <button className='remove-media' onClick={() => { this.removeMedia() }}>
+                  <img alt='' src={backArrow} />
+                  Make Another Search
+                </button>
                 <CardContainer media={media} />
-              }
-
-            </Parallax>
-          </div>
-        )
-      }} />
+              </div>
+            )
+          }} />
+        }
+      </div>
     );
   }
-}
-
-App.propTypes = {
-  newFunction: PropTypes.func.isRequired
 }
 
 export const mapStateToProps = ({ media }) => ({
@@ -82,7 +110,8 @@ export const mapStateToProps = ({ media }) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  setData: (media) => dispatch(setData(media))
+  setData: (media) => dispatch(setData(media)),
+  removeStateMedia: (newMedia) => dispatch(removeStateMedia(newMedia)),
 });
 
 
