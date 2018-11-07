@@ -4,7 +4,7 @@ import backArrow from './images/back.svg'
 import CardContainer from './CardContainer/CardContainer';
 import Header from './Header/Header';
 import Search from './Search/Search';
-import { Route, NavLink } from 'react-router-dom';
+import { Route, NavLink, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { searchData } from './utilities/Cleaner';
 import { Parallax, Background } from 'react-parallax';
@@ -115,4 +115,4 @@ export const mapDispatchToProps = (dispatch) => ({
 });
 
 
-export default connect( mapStateToProps, mapDispatchToProps )(App);
+export default withRouter(connect( mapStateToProps, mapDispatchToProps )(App));
