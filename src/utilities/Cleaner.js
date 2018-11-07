@@ -1,7 +1,8 @@
 import * as API from '../API/API';
 
 export const searchData = async (query, type) => {
-  const getData = await API.fetchData(query, type);
+  const cleanedQuery = query.replace(/ /g, '+')
+  const getData = await API.fetchData(cleanedQuery, type);
   const cleanedData = await returnMedia(getData.Similar);
   return cleanedData;
 }
