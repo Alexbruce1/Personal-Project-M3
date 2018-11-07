@@ -1,14 +1,18 @@
-import * as Card from './Card';
+import { Card } from './Card';
 import React from 'react';
 import { shallow } from 'enzyme';
-import * as API from '../API/API';
-jest.mock('../API/API');
 
+describe.skip('Card', () => {
+  let wrapper = shallow(<Card
+    name='name'
+    type='type'
+    teaser='teaser'
+    wiki='wiki'
+    yt='yt'
+    yId='yId'
+  />);
 
-describe('Card', () => {
-
-
-  it('should', () => {
-
-  })
-})
+  it('should render like the snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
+});

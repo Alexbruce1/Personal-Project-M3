@@ -4,8 +4,6 @@ export const mediaReducer = (state = [], action) => {
       return action.media;
     case 'REMOVE_STATE_MEDIA':
       return action.media;
-    case 'ADD_DATA_TYPE':
-      return action.dataType;
     default:
       return state;
   }
