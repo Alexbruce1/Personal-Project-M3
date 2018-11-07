@@ -1,28 +1,10 @@
-import { Card } from './Card';
-import React from 'react';
-import { shallow } from 'enzyme';
-import * as API from '../API/API';
-jest.mock('../API/API');
+// jest.mock('../API/API');
 
+// describe('Card', () => {
+//   let wrapper;
 
-describe('Card', () => {
-  let wrapper;
-  let mockCard;
+//   it('should render like the snapshot', () => {
+//     expect(wrapper).toMatchSnapshot();
+//   });
 
-  beforeEach(() => {
-    mockCard = {
-      name: 'name',
-      type: 'type',
-      teaser: 'teaser',
-      wiki: 'wiki',
-      yt: 'yt',
-      yId: 'yId',
-    }
-  })
-
-  it('should render like the snapshot', () => {
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  
-});
+// });

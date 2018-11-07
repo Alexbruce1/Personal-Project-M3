@@ -7,7 +7,6 @@ jest.mock('../API/API');
 
 describe('CardContainer', () => {
 
-
   it('should', () => {
 
   })
