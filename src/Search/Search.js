@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { searchData } from '../utilities/Cleaner';
 import './Search.css';
 
 class Search extends Component {
