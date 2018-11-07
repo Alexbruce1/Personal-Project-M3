@@ -12,7 +12,7 @@ class Search extends Component {
   render() {
     return(
       <div className='search'>
-        <h2 className='search-title'>Search for content, or just browse</h2>
+        <h2 className='search-title'>Search for content below</h2>
         <form className='search-form' onSubmit={this.getData}>
           <div className='search-input-container'>
             <input className='search-input' placeholder='Search' onChange={this.props.storeQuery}/>

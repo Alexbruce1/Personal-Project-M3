@@ -15,9 +15,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ![Opening Page](./screenshots/start.png "Opening Page")
 
 ### Search Screen:
-![Search Page](./screenshots/search.png "Search Page")
+![Search Page](./screenshots/searchPage.png "Search Page")
 
-![Search Page](./screenshots/search-info.png "Search Page")
+![Search Page](./screenshots/searchPage-info.png "Search Page")
 
 ### Data Screen:
 ![Data Page](./screenshots/data.png "Data Page")
