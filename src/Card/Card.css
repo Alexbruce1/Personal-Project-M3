@@ -88,8 +88,10 @@
   height: 15rem;
   margin: auto;
   padding: 0;
+  position: relative;
   transition-duration: .3s;
   width: 90%;
+  z-index: 1;
 }
 
 .youtube-embed:hover {
