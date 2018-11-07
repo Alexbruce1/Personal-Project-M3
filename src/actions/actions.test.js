@@ -1,4 +1,4 @@
-import { setData, addQuery, addDataType } from './actions';
+import { setData, removeStateMedia, addDataType } from './actions';
 
 describe('actions', () => {
   it('Should have a type of GET_DATA', () => {
@@ -12,13 +12,13 @@ describe('actions', () => {
     expect(result).toEqual(expected);
   });
 
-  it('should have a type of ADD_QUERY', () => {
-    const query = 'Tom Petty';
+  it('should have a type of REMOVE_STATE_MEDIA', () => {
+    const media = [];
     const expected = {
-      type: 'ADD_QUERY',
-      query
-    }
-    const result = addQuery(query);
+      type: 'REMOVE_STATE_MEDIA',
+      media
+    };
+    const result = removeStateMedia(media);
 
     expect(result).toEqual(expected);
   })
