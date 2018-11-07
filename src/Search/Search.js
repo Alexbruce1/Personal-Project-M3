@@ -8,7 +8,6 @@ class Search extends Component {
   getData = async (e) => {
     e.preventDefault();
     this.props.callApi();
-    // await searchData(this.props.media)
   }
 
   render() {

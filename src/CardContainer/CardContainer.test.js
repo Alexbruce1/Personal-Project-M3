@@ -1,13 +1,18 @@
 import * as CardContainer from './CardContainer';
 import React from 'react';
 import { shallow } from 'enzyme';
-import * as API from '../API/API';
-jest.mock('../API/API');
 
 
 describe('CardContainer', () => {
+  let wrapper;
+  let data;
 
-  it('should', () => {
+  // beforeEach(() => {
+  //   data = [{}, {}]
+  //   wrapper = shallow(<CardContainer media={data} />);
+  // });
 
+  it('should render like the snapshot', () => {
+    // expect(wrapper).toMatchSnapshot();
   })
 })
